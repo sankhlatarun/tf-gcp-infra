@@ -5,3 +5,6 @@ vpc_routing_mode ="REGIONAL"
 vpc_auto_create_subnetworks = "false"
 webapp_subnetwork_ip_cidr_range ="192.168.1.0/24"
 db_subnetwork_ip_cidr_range ="192.168.2.0/24"
+network = "csye6225-network-demo"
+allow_port_5432_name ="allow-ssh"
+allow_port_5432 = 22

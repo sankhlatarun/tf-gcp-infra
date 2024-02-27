@@ -24,6 +24,11 @@ variable "network" {
   default = "csye6225-network"
 }
 
+variable "network_demo" {
+  default = "csye6225-network-demo"
+  
+}
+
 variable "subnetwork_webapp" {
   default = "webapp-subnetwork"
 }
@@ -103,7 +108,7 @@ variable "allow_tcp_port_protocol" {
 
 
 variable "deny_port_22" {
-  default = "22"
+  default = "222"
 }
 
 variable "webapp_vm_name" {
@@ -116,7 +121,7 @@ variable "machine_type" {
 }
 
 variable "base_image_name" {
-  default = "csye6225-image-a3"
+  default = "csye6225-image-a3-demo"
 }
 
 
@@ -131,4 +136,13 @@ variable "boot_disk_size" {
 
 variable "allow_postgres" {
   default = "postgrestag"
+}
+
+variable "allow-ssh-rule-demo" {
+  default = "allow-ssh-rule-demo"
+}
+
+
+variable "port_22" {
+  default = 22
 }
