@@ -48,7 +48,7 @@ resource "google_compute_instance" "webapp_vm" {
     }
   }
 
-  tags = [var.allow_port_3000_name, var.allow_port_5432_name,var.deny_port_22_name,var.allow_postgres]
+  tags = [var.allow_port_3000_name, var.allow_port_5432_name,var.allow_postgres]
   network_interface {
     # network = "default"
     network     = google_compute_network.csye6225_vpc_network.self_link
@@ -85,7 +85,7 @@ resource "google_compute_firewall" "allow_port_5432" {
   
 
   source_ranges = [var.sourse_range_firewall]
-  target_tags   = [var.allow_port_5432_name]
+  target_tags   = [var.webapp_vm_name]
 }
 
 resource "google_compute_firewall" "deny_port_22" {
