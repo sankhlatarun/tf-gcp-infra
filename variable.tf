@@ -218,7 +218,7 @@ variable "service_account_scopes" {
 
 variable "vpc_network_list" {
   type = list(string)
-  default = ["csye6225-network","csye6225-network-2"]
+  default = ["csye6225-network","csye6225-network-3"]
 }
 
 variable "database_version" {
