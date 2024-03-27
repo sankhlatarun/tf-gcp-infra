@@ -182,7 +182,7 @@ resource "google_sql_user" "sql_user" {
 
 resource "random_password" "password" {
   length           = 16
-  special          = true
+  special          = false
   override_special = "!#$%&*()-_=+[]{}<>:?"
 }
 
