@@ -12,3 +12,7 @@ google_storage_bucket_location="us-east1"
 zone="us-east1-b"
 vpc_region="us-east1"
 boot_disk_size="70"
+webapp_instance_group_manager_name = "webapp-instance-group-manager-1"
+base_image_name ="csye6225-image-1713147568"
+google_compute_health_check_check_interval_sec = 60
+google_compute_health_check_timeout_sec = 60

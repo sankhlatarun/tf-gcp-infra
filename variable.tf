@@ -717,5 +717,47 @@ variable "lifecycle_prevent_destroy" {
 variable "role_cryptoKeyEncrypterDecrypter" {
   default = "roles/cloudkms.cryptoKeyEncrypterDecrypter"
   type = string
+}
+
+variable "computer_system_service_account" {
+  default = "service-738558818349@compute-system.iam.gserviceaccount.com"
+  type = string
   
+}
+
+variable "csye_gservice_account" {
+  default = "webapp-service-account@csye6225tarundev.iam.gserviceaccount.com"
+  type = string
+  
+}
+
+variable "role_cloudkms_admin" {
+  default = "roles/cloudkms.admin"
+  type = string
+}
+
+variable "kms_crypto_key_purpose" {
+  default = "ENCRYPT_DECRYPT"
+  type = string
+  
+}
+
+variable "prevent_destroy" {
+  default = false
+  type = bool
+  
+}
+
+variable "sql_service_account" {
+  default = "sqladmin.googleapis.com"
+  type = string
+  
+}
+
+variable "google_compute_health_check_check_interval_sec" {
+  default = 60
+}
+
+variable "google_compute_health_check_timeout_sec" {
+  default = 60
 }
