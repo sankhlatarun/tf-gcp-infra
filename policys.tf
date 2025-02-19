@@ -1,6 +1,6 @@
 data "google_iam_policy" "kms_key_encrypt_decrypt" {
   binding {
-    role = "roles/cloudkms.cryptoKeyEncrypterDecrypter"
+    role    = var.role_cryptoKeyEncrypterDecrypter
     members =  [ "serviceAccount:${local.cloud_storage_service_account}"]
   }
 }

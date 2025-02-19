@@ -130,5 +130,7 @@ dist
 .pnp.*
 
 .terraform/
+.terraform-tfvars/
+*.tfvars
 *.tfstate
 *.tfstate.backup

@@ -1,7 +1,7 @@
 resource "google_project_service_identity" "cloudsql_sa" {
   provider  = google-beta
   project   = var.project
-  service   = "sqladmin.googleapis.com"
+  service   = var.sql_service_account
 }
 
 resource "google_sql_database_instance" "webapp_sql_instance" {
