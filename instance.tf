@@ -59,6 +59,8 @@ resource "google_compute_health_check" "webapp_health_check" {
   name      = var.google_compute_health_check_name
   provider  = google-beta
   project   = var.project
+  check_interval_sec = var.google_compute_health_check_check_interval_sec
+  timeout_sec        = var.google_compute_health_check_timeout_sec
 
   http_health_check {
     request_path        = var.http_health_check_path

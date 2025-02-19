@@ -753,3 +753,11 @@ variable "sql_service_account" {
   type = string
   
 }
+
+variable "google_compute_health_check_check_interval_sec" {
+  default = 60
+}
+
+variable "google_compute_health_check_timeout_sec" {
+  default = 60
+}

@@ -56,6 +56,9 @@ resource "google_compute_managed_ssl_certificate" "webapp_ssl_cert" {
   provider = google-beta
   name     = var.google_compute_managed_ssl_certificate_name
   project = var.project 
+  lifecycle {
+    prevent_destroy = false
+  }
   managed {
     domains = [var.webapp_domain_name]
   }

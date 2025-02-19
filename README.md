@@ -14,7 +14,7 @@ commands:
 terraform plan
 terraform destroy
 terraform apply
-terraform plan -var-file="terraform-tfvars/main.tfvars" 
+terraform plan -var-file="terraform-tfvars/terraform.tfvars" 
 terraform apply  --auto-approve
 
 added google beta via terraform init 
